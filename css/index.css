@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)),
+    url(https://images.unsplash.com/photo-1666449249394-04acd9e489a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1034&q=80);
+    background-position: center center;
+    background-size: cover;
+
+}
+header{
+    width: 90%;
+    height: 80px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    margin:auto;
+
+}
+.logo{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: white;
+    animation: me 5s  0.5s infinite linear ;
+    font-style: italic;
+}
+.logo span{
+    color: brown;
+}
+ul{
+    list-style: none;
+
+}
+ul li {
+    display: inline-block;
+    padding: 0 10px;
+
+
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: .5s ease 0s;
+    position: relative;
+
+}
+
+ul li a:hover{
+    color: brown;
+}
+
+ul li a::after{
+    content: "";
+    position: absolute;
+    width:0;
+    height: 5px;
+    background-color: brown;
+    left: 0;
+    bottom: -10px;
+    border-radius: 0 20px 20px 0 ;
+    transition: .5s ease 0s;
+}
+ul li a:hover::after{
+    width: 110%;
+}
+button{
+    border: none;
+    background-color: brown;
+    padding: 10px 20px;
+    color: white;
+    font-size: 25px;
+    border-radius: 30px;
+    text-transform: capitalize;
+}
+button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+@keyframes me {
+    0%{
+        color: blue;
+    }
+    60%{
+        color: brown;
+    }
+    100%{
+        color: blueviolet;
+
+    }
+
+    
+}
